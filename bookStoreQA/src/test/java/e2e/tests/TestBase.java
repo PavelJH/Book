@@ -33,19 +33,19 @@ public class TestBase {
     @BeforeMethod()
     public void startTest(Method m, Object[] p) {
         logger.info("Start test " + m.getName() + " with data: " + Arrays.asList(p));
-        homePage = new HomePage(app.driver);
-        homePage.waitForLoading();
-        homePage.clickLoginButton();
-
-        loginPage = new LoginPage(app.driver);
-        loginPage.waitForLoading();
-        loginPage.userNameField(userName);
-        loginPage.passwordField(password);
-        loginPage.clickLoginButton();
-
-        profilePage = new ProfilePage(app.driver);
-        profilePage.waitForLoading();
-        profilePage.clickGoToBookStore();
+//        homePage = new HomePage(app.driver);
+//        homePage.waitForLoading();
+//        homePage.clickLoginButton();
+//
+//        loginPage = new LoginPage(app.driver);
+//        loginPage.waitForLoading();
+//        loginPage.userNameField(userName);
+//        loginPage.passwordField(password);
+//        loginPage.clickLoginButton();
+//
+//        profilePage = new ProfilePage(app.driver);
+//        profilePage.waitForLoading();
+//        profilePage.clickGoToBookStore();
     }
 
     @AfterMethod
